@@ -1,0 +1,32 @@
+﻿@{
+	ViewBag.Title = "About Index";
+	Layout = "MasterLayout"; // DOCTYPE'ı burdan yakalasın diye
+}
+
+<br />
+
+<div class="row">
+	<div class="justify-content-center">
+		<nav class="navbar">
+			<div class="container-fluid">
+				<ul class="navbar-nav flex-grow-1 navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-controller="About" asp-action="Index">Mission</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-controller="About" asp-action="BoardOfDirectors">BoardOfDirectors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-controller="About" asp-action="History">History</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<div class="container">
+	<main class="pb-3">
+		@RenderBody()
+	</main>
+</div>
